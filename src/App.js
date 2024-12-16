@@ -62,6 +62,7 @@ const App = () => {
     if (filter === "online") return robot.status === "Online";
     if (filter === "offline") return robot.status === "Offline";
     if (filter === "low-battery") return robot.battery < 20;
+   
     return true;
   });
 
